@@ -24,8 +24,7 @@ def download(episode, num, queue):
     queue.get()
 
 if __name__ == '__main__':
-    num = 0
-    for ep in range(0, 26):
+    for ep in range(1, 26):
         if not os.path.exists(str(ep)):
             os.makedirs(str(ep))
         # max worker = 8
