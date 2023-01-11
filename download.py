@@ -19,7 +19,7 @@ def download(episode, num, queue):
     response = requests.get(url,headers=headers)
     if response.status_code == 200:
         print(url)
-        with open(f'./{episode}/{num}.ts', 'wb') as f:
+        with open(f'./{episode}/{num_0}.ts', 'wb') as f:
             f.write(response.content)
     queue.get()
 
